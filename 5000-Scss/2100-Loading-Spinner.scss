@@ -1,0 +1,107 @@
+/*
+  ***** Loading-Spinner & Co *****
+*/
+
+$size: 3vh;
+$anim-dur: 1000ms;
+$anim-delay: $anim-dur / 5;
+
+.Loading-Spinner {
+  display: flex;
+  box-sizing: border-box;
+
+  width: 60%;
+  height: 24%;
+
+  position: fixed;
+
+  top: 50%;
+  left: 50%;
+  /* bring your own prefixes */
+  transform: translate(-50%, -50%);
+
+  .container {
+    display: flex;
+    box-sizing: border-box;
+    flex-direction: row;
+    justify-items: center;
+
+    background-color: $CouleurTertiaire;
+  }
+
+  .load {
+    display: flex;
+    justify-content: space-evenly;
+
+    width: 5%*10;
+    height: 13.3%*7.5;
+
+    &__bar {
+      background-color: $CouleurPrimaire;
+
+      height: 100%;
+      width: 13%;
+
+      animation: bars $anim-dur backwards infinite ease-in-out alternate;
+
+      @for $i from 1 through 5 {
+        &--#{$i} {
+          animation-delay: $anim-delay * $i;
+        }
+
+        &--#{$i}-inv {
+          animation-delay: $anim-delay * $i + random(100)*15ms;
+          animation-direction: alternate-reverse;
+          animation-fill-mode: forwards;
+          background-color: $CouleurSecondaire;
+        }
+      }
+    }
+  }
+
+  .Spin {
+    display: flex;
+    align-content: center;
+    align-items: center;
+    background-color: $CouleurTertiaire;
+    color: white;
+
+    width: 60%;
+    width: 50%;
+  }
+
+  .Spinner__Logo {
+    width: 80%;
+    height: 50%;
+
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+}
+
+/* pour arreter le Loading Spinner*/
+.Opacity-load {
+  animation: Rotation-Fader 3s linear;
+  // le forward permet de maintenir le 100% en dernier
+  // et d'effacer le spinner
+  animation-fill-mode: forwards;
+  // animation-fill-mode: none;
+}
+
+@media all and (min-width: 800px) and (max-width: 2992px) {
+
+  /**** Tablette ****/
+  .Loading-Spinner {
+    left: 60%;
+  }
+}
+
+@media all and (min-width: 1000px) and (max-width: 2992px) {
+
+  /**** Deskop ****/
+  .Loading-Spinner {
+    left: 65%;
+  }
+}

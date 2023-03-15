@@ -1,0 +1,22 @@
+//
+// ***** Variables & Co *****
+// 
+
+// Chemin pour accéder aux font Shrikland & Roboto
+// Mettre les .. devant répertoire, 
+// sinon les Font ne fonctionne pas via le site Gitub.
+$CheminFontShrikhand: '../1000-Util/0100-Font-Shrikhand/';
+$CheminFontRoboto: '../1000-Util/0110-Font-Roboto/';
+
+// Couleur de la charte
+$CouleurPrimaire: #9356DC;
+$CouleurSecondaire: #FF79DA;
+$CouleurTertiaire: #99E2D0;
+
+// Couleur autres
+$CouleurBackgroudFooter: #353535;
+$CouleurBackgroudResto: #f6f6f6;
+
+// In fo Nouveau incrusté dans image
+$CouleurBackgroudNew: #99e2d0;
+$CouleurFontNew: #048969;

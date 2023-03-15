@@ -1,0 +1,84 @@
+/*
+  ***** @keyframes & Co *****
+*/
+
+@keyframes Menu_E_opacity_000_vers_100 {
+  0% {
+    opacity: 0;
+  }
+
+  33% {
+    opacity: 1;
+  }
+
+}
+
+@keyframes Menu_P_opacity_000_vers_100 {
+  0% {
+    opacity: 0;
+  }
+
+  33% {
+    opacity: 0;
+  }
+
+  66% {
+    opacity: 1;
+  }
+}
+
+@keyframes Menu_D_opacity_000_vers_100 {
+  0% {
+    opacity: 0;
+  }
+
+  66% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes opacity_000_vers_100 {
+  0% {
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+    z-index: 999;
+  }
+}
+
+
+@keyframes bars {
+  0% {
+    transform: scaleY(0.5);
+  }
+
+  100% {
+    transform: scaleY(1.0);
+  }
+}
+
+
+@keyframes Rotation-Fader {
+  from {
+    opacity: 1;
+    transform: rotate(0deg);
+  }
+
+  to {
+    opacity: 0;
+    transform: rotate(360deg);
+    opacity: 0;
+    display: none;
+    z-index: -2000;
+  }
+}

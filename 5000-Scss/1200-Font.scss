@@ -1,0 +1,57 @@
+/*
+  ***** Font & Co *****
+*/
+// Logo et titres: Shrikhand 
+// Texte: Roboto
+
+@font-face {
+  font-family: 'ShrikhandRegular';
+  src: url($CheminFontShrikhand + 'shrikhand-regular-webfont.eot');
+  src: url($CheminFontShrikhand + 'shrikhand-regular-webfont.eot?#iefix') format('embedded-opentype'),
+    url($CheminFontShrikhand + 'shrikhand-regular-webfont.woff') format('woff'),
+    url($CheminFontShrikhand + 'shrikhand-regular-webfont.ttf') format('truetype'),
+    url($CheminFontShrikhand + 'shrikhand-regular-webfont.svg#shrikhandregular') format('svg');
+
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'RobotoBlack';
+  src: url($CheminFontRoboto + 'Roboto-Black.ttf') format('truetype');
+
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'RobotoRegular';
+  src: url($CheminFontRoboto + 'Roboto-Regular.ttf') format('truetype');
+
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'RobotoBold';
+  src: url($CheminFontRoboto + 'Roboto-Bold.ttf') format('truetype');
+
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'RobotoMedium';
+  src: url($CheminFontRoboto + 'Roboto-Medium.ttf') format('truetype');
+
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'RobotoLight';
+  src: url($CheminFontRoboto + 'Roboto-Light.ttf') format('truetype');
+
+  font-weight: normal;
+  font-style: normal;
+}

@@ -1,0 +1,27 @@
+/*
+  ***** Général & Co *****
+*/
+
+html {
+  background-color: white;
+  border-color: white;
+
+  margin: 0 0 0 0;
+}
+
+header,
+footer,
+body {
+  // haut | droite | bas | gauche
+  margin: 0 0 0 0;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.Opacity-10s {
+  animation-delay: 0s;
+  animation: opacity_000_vers_100 5s linear;
+  // le forward permet de maintenir le 100% en dernier
+  // et d'effacer le spinner
+  animation-fill-mode: forwards;
+}
